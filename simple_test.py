@@ -31,3 +31,7 @@ class QuickstartUser(HttpUser):
     @task(1)
     def view_aboutus(self):
         self.client.get("/about-us/")   
+
+    @task(1)
+    def view_courses_detail(self):
+        self.client.get("/course/sprint-82-course/")      
